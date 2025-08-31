@@ -64,6 +64,7 @@ while True:
         else:
             for i, task in enumerate(details,1):
                 print(f'{i}.{task}')
+                num = int(input('Enter Task Number To Delete : '))
                 if 1 <= num <= len(details):
                     deleted = details.pop(num -1)
                     print(f"Task '{deleted}' Deleted Successfully")
